@@ -12,7 +12,7 @@ namespace BMassage.Data
         // Определяем наборы сущностей
         public DbSet<Massage> Massages { get; set; }
         public DbSet<Booking> Bookings { get; set; }
-    }
+    
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
