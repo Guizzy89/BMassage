@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "BMassage";
+}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BMassage</title>
+    <!-- Подключаем стили Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-wTzWqkGCHmYQsewxCaFlDLfjH/xHEVpbKycv7+tND9ynTpL0DU2q6prBMt8u8iXYX0zP92U" crossorigin="anonymous">
+
+    <style>
+        /* Фон */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: linear-gradient(to bottom right, #ffffff, #dfeffb);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Основной контейнер */
+        .container {
+            max-width: 600px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,.1);
+            padding: 3rem;
+            background-color: #fff;
+        }
+
+        /* Заголовок */
+        h1.display-4 {
+            color: #343a40;
+            font-size: 3em;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        p.lead {
+            font-size: 1.25em;
+            color: #6c757d;
+            margin-bottom: 2rem;
+        }
+
+        /* Блок кнопок */
+        .btn-group {
+            width: 100%;
+        }
+
+        .btn {
+            width: 100%;
+            height: 50px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+            .btn:hover {
+                transform: scale(1.05);
+            }
+
+        a.btn-link {
+            color: white !important;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-4">Добро пожаловать на сайт частного кабинета массажа!</h1>
+        <p class="lead">Мы предлагаем вам полный спектр услуг профессионального массажа.</p>
+        <div class="btn-group d-flex gap-2">
+            <a href="/Massage" class="btn btn-primary w-100">Наши услуги</a>
+            <a href="/Booking" class="btn btn-success w-100">Записаться на сеанс</a>
+        </div>
+
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
