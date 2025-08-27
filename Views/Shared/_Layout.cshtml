@@ -8,8 +8,6 @@
     <!-- Подключаем стили Bootstrap -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 
-    <!-- Собственные стили -->
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 
     <!-- Любые другие метаданные и сценарии -->
 </head>
@@ -54,9 +52,7 @@
     <!-- Скрипты Bootstrap -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Ваши собственные скрипты -->
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

@@ -2,23 +2,29 @@
 
 <h1>Добавьте новую услугу массажа</h1>
 
-<div class="row">
-    <div class="col-md-4">
-        <form method="post" asp-action="Create">
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group">
-                <label for="Name">Название услуги</label>
-                <input type="text" asp-for="Name" class="form-control" required />
-            </div>
-            <div class="form-group">
-                <label for="Description">Описание услуги</label>
-                <textarea asp-for="Description" rows="4" cols="50" class="form-control" required></textarea>
-            </div>
-            <div class="form-group">
-                <label for="Price">Стоимость (руб.)</label>
-                <input type="number" step="any" asp-for="Price" class="form-control" required />
-            </div>
-            <button type="submit" class="btn btn-primary">Добавить услугу</button>
-        </form>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4 shadow p-4 rounded bg-light">
+            <form method="post" asp-action="Create">
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label for="Name" class="form-label">Название услуги:</label>
+                    <input type="text" asp-for="Name" class="form-control" id="Name" placeholder="Например, релаксирующий массаж" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="Description" class="form-label">Описание услуги:</label>
+                    <textarea asp-for="Description" rows="4" cols="50" class="form-control" id="Description" placeholder="Краткое описание процедуры..." required></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Price" class="form-label">Стоимость (руб.):</label>
+                    <input type="number" step="any" asp-for="Price" class="form-control" id="Price" placeholder="Цена за сеанс" required />
+                </div>
+
+                <button type="submit" class="btn btn-success w-100">Добавить услугу</button>
+            </form>
+        </div>
     </div>
 </div>
